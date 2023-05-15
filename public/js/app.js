@@ -1,6 +1,3 @@
-console.log('Client Side Java Script Is Loaded Here')
-
-
 
 
 
