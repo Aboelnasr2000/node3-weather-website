@@ -16,7 +16,9 @@ async function getData(location) {
         // Trigger the listData function and pass the result
         if (!data.error) {
             data1.textContent = 'In ' + data.address
-            data2.textContent = 'The Weather is ' + data.weather.description + " , The Current Tempreture is   " + data.weather.tempreture + ' Degrees, Yet it feels like ' + data.weather.feelslike + ' Degrees. '
+            data2.textContent = 'The Weather is ' + data.weather.description + " , The Current Tempreture is   " + data.weather.tempreture +
+                ' Degrees, Yet it feels like ' + data.weather.feelslike + ' Degrees. Humidty is '
+                + data.weather.humidity + " % "
         } else {
             data1.textContent = data.error
         }

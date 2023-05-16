@@ -12,10 +12,12 @@ export const forecast = (longitude, latitude, callback) => {
             console.log("Unable to find to location!")
         }
         else {
+            // console.log(body)
             callback(undefined, {
                 description: body.current.weather_descriptions[0],
                 tempreture: body.current.temperature,
-                feelslike: body.current.feelslike
+                feelslike: body.current.feelslike,
+                humidity: body.current.humidity,
             })
 
         }
