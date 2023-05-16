@@ -10,7 +10,7 @@ const data2 = document.querySelector('#data2')
 async function getData(location) {
     try {
         // We are using fetch to get the response
-        const response = await fetch('http://localhost:3000/weather?address=' + location);
+        const response = await fetch('/weather?address=' + location);
         const data = await response.json();
 
         // Trigger the listData function and pass the result

@@ -8,6 +8,7 @@ import { forecast } from './utils/forecast.js';
 
 //Launch Express
 const app = express()
+const port = process.env.PORT || 3000
 
 //Define Paths For Express Config
 const __filename = fileURLToPath(import.meta.url);
@@ -116,6 +117,6 @@ app.get('*', (req, res) => {
 
 
 //Set Listen
-app.listen(3000, () => {
-    console.log("Server is Up on Port 3000.")
+app.listen(port, () => {
+    console.log("Server is Up on Port" + port)
 })
